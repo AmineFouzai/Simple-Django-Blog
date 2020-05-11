@@ -1,0 +1,8 @@
+<form class="form-group" action="{%url 'signup' %}" method="POST">
+    {%csrf_token%}
+    <div class="form-container">
+        {{signup_form}}
+        <button class="btn btn-success" type="submit">signup</button>
+
+    </div>
+</form>

@@ -1,0 +1,174 @@
+.logout {
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    left: 4px;
+    border: none;
+    border-collapse: collapse;
+    border-width: 100%;
+    width: 150px;
+    height: 10px;
+    background-color: white;
+    justify-self: center;
+}
+
+.post-container {
+    position: relative;
+    top: 10px;
+    display: grid;
+    justify-content: center;
+    justify-self: center;
+    grid-row-gap: 1rem;
+}
+
+.post-container-post {
+    display: grid;
+    align-self: center;
+    justify-content: center;
+    justify-self: center;
+    position: relative;
+    top: 50px;
+    display: grid;
+    width: 900px;
+    left: 300px;
+    justify-content: center;
+    justify-self: center;
+    grid-row-gap: 1rem;
+}
+
+.indecator {
+    text-transform: capitalize;
+    position: relative;
+    top: 18rem;
+    display: grid;
+    justify-content: center;
+    justify-self: center;
+}
+
+.main-form-container {
+    display: grid;
+    height: 150%;
+}
+
+.form-container {
+    position: relative;
+    top: 15px;
+    background-color: rgba(77, 161, 77, 0.027);
+    border-radius: 15px 15px 15px 15px;
+    border: solid forestgreen 1px;
+    justify-content: center;
+    justify-self: center;
+    width: 50%;
+    height: 110%;
+    color: white;
+    font-size: x-large;
+    display: grid;
+    box-shadow: rgba(0, 0, 0, 0.363) 0px 3px 3px 0px;
+}
+
+.form-container form {
+    justify-content: center;
+    justify-self: center;
+}
+
+.form-container textarea {
+    display: grid;
+    width: 100%;
+}
+
+.form-container input {
+    display: grid;
+    grid-row-gap: 5rem;
+    justify-content: center;
+    justify-self: center;
+    grid-row-gap: 1rem;
+}
+
+#btn-main {
+    position: relative;
+    top: 29px;
+    width: 10rem;
+}
+
+@keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55)
+    }
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1)
+    }
+}
+
+.waveWrapper {
+    z-index: -1;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: -1px;
+    margin: auto;
+}
+
+.waveWrapperInner {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    bottom: -1px;
+    background-image: linear-gradient(to top, #37863b 20%, #2e4936 80%);
+}
+
+.bgTop {
+    z-index: 15;
+    opacity: 0.5;
+}
+
+.bgMiddle {
+    z-index: 10;
+    opacity: 0.75;
+}
+
+.bgBottom {
+    z-index: 5;
+}
+
+.wave {
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+}
+
+.waveTop {
+    background-size: 50% 100px;
+}
+
+.waveAnimation .waveTop {
+    animation: move-wave 3s;
+    -webkit-animation: move-wave 3s;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.waveMiddle {
+    background-size: 50% 120px;
+}
+
+.waveAnimation .waveMiddle {
+    animation: move_wave 10s linear infinite;
+}
+
+.waveBottom {
+    background-size: 50% 100px;
+}
+
+.waveAnimation .waveBottom {
+    animation: move_wave 15s linear infinite;
+}

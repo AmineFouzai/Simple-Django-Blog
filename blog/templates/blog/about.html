@@ -1,0 +1,15 @@
+{% extends 'blog/base.html' %} {% block content %}
+<div class="post-container-post">
+    <div class="card mb-3" style=" background-color: #eaf3eb">
+        <div class="row no-gutters">
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">{{post.title}}</h5>
+                    {% autoescape off %} {{post.body}} {% endautoescape %}
+                    <h3 class="card-text"> "{{post.author}} "</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

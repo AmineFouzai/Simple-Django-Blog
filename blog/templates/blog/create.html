@@ -1,0 +1,15 @@
+{%extends "blog/base.html" %} {%block content%}
+<div class="main-form-container">
+    <div class="form-container">
+        <form action="{% url 'create' %}" method="POST">
+            <div class="my-form">
+                {%csrf_token%} {{form}}
+
+                <button id="btn-main" class="btn btn-success" type="submit">Create</button>
+
+
+            </div>
+        </form>
+    </div>
+</div>
+{%endblock content%}

@@ -1,0 +1,200 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    display: grid;
+    padding: 1rem;
+    margin: 0rem;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    font-family: 'montserrat';
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    justify-items: center;
+}
+
+body h1 {
+    text-transform: uppercase;
+    position: relative;
+    top: 50px;
+}
+
+.main-container {
+    position: relative;
+    top: 10rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    justify-items: center;
+    width: 120%;
+    height: 120%;
+    grid-column-gap: 8rem;
+    border: solid rgba(34, 139, 34, 0.733) 1px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.589) 0px 8px 8px 0px;
+}
+
+.or {
+    border: solid rgba(0, 0, 0, 0.185) 1px;
+    height: 300px;
+    width: 0px;
+    text-align: center;
+    text-transform: uppercase;
+    grid-column: 2;
+}
+
+.login {
+    width: 153%;
+    height: 120%;
+    background-color: rgba(77, 161, 77, 0.027);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    justify-items: center;
+    font-family: 'montserrat';
+    font-size: large;
+    font-weight: bold;
+    border-radius: 15px 0px 0px 15px;
+    grid-column: 1;
+    color: #fff;
+}
+
+.login p {
+    position: relative;
+    bottom: 20px;
+}
+
+.login input {
+    display: grid;
+    grid-row-gap: 1rem;
+}
+
+.login button {
+    position: relative;
+    top: 1rem;
+    font-size: large;
+}
+
+.login small a {
+    position: relative;
+    top: 1rem;
+    font-size: large;
+    color: #fff;
+}
+
+.signup {
+    color: #fff;
+    width: 153%;
+    height: 120%;
+    background-color: rgba(77, 161, 77, 0.027);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    justify-items: center;
+    font-family: 'montserrat';
+    font-size: large;
+    font-weight: bold;
+    grid-column: 3;
+    border-radius: 0px 15px 15px 0px;
+}
+
+.signup input {
+    display: grid;
+    grid-row-gap: 1rem;
+}
+
+.signup button {
+    position: relative;
+    top: 1rem;
+    font-size: large;
+}
+
+@keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55)
+    }
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1)
+    }
+}
+
+.waveWrapper {
+    z-index: -1;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: -1px;
+    margin: auto;
+}
+
+.waveWrapperInner {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    bottom: -1px;
+    background-image: linear-gradient(to top, #37863b 20%, #2e4936 80%);
+}
+
+.bgTop {
+    z-index: 15;
+    opacity: 0.5;
+}
+
+.bgMiddle {
+    z-index: 10;
+    opacity: 0.75;
+}
+
+.bgBottom {
+    z-index: 5;
+}
+
+.wave {
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+}
+
+.waveTop {
+    background-size: 50% 100px;
+}
+
+.waveAnimation .waveTop {
+    animation: move-wave 3s;
+    -webkit-animation: move-wave 3s;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.waveMiddle {
+    background-size: 50% 120px;
+}
+
+.waveAnimation .waveMiddle {
+    animation: move_wave 10s linear infinite;
+}
+
+.waveBottom {
+    background-size: 50% 100px;
+}
+
+.waveAnimation .waveBottom {
+    animation: move_wave 15s linear infinite;
+}
